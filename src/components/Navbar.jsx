@@ -1,6 +1,7 @@
 import React from 'react';
 import NavLink from "./NavLink.jsx";
 
+//this component is the navbar used in the header
 function Navbar(props) {
     const className = props.className;
 

@@ -17,6 +17,79 @@ body{
 }
 
 /********************************
+*********Logo Section**********
+********************************/
+
+/* Logo */
+.logo{
+    display: flex;
+    align-items: center;
+    background-color: #eeede9;
+    border-radius: 999px;
+    padding: 16px;
+    text-decoration:none;
+}
+
+
+.logo-img {
+    height: 80px;
+    width: auto;
+    border-radius: 999px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+    width:275px;
+    text-align:center;
+}
+
+.logo-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #fd7d13;
+}
+
+.logo-title span{
+    color: black;
+}
+
+.logo-slogan {
+    font-weight: bold;
+    color: black;
+}
+
+/********************************
+******Phone button Section*******
+********************************/
+
+/* Phone number button */
+.phone-btn {
+    background-color: #eeede9;
+    color: black;
+    border: none;
+    font-size: 15px;
+    padding: 1rem 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width:175px;
+}
+
+.phone-btn:hover {
+    background-color: #d3d2ce;
+}
+
+
+.phone-icon{
+    font-size:1.1rem;
+    color : #fd7d13;
+}
+
+/********************************
 *********Header Section**********
 ********************************/
 
@@ -35,47 +108,6 @@ body{
     flex-wrap: wrap; 
     border-bottom: 1px solid #3030301f;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.445);
-}
-
-/* Logo */
-.header-logo{
-    
-    display: flex;
-    align-items: center;
-    background-color: #eeede9;
-    border-radius: 999px;
-    padding: 16px;
-    text-decoration:none;
-}
-
-
-.header-logo-img {
-    height: 80px;
-    width: auto;
-    border-radius: 999px;
-}
-
-.header-logo-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1.2;
-    width:275px;
-    text-align:center;
-}
-
-.header-logo-title {
-    font-weight: 700;
-    font-size: 1.8rem;
-    color: #fd7d13;
-}
-.header-logo-title span{
-    color: black;
-}
-
-.header-logo-slogan {
-    font-weight: bold;
-    color: black;
 }
 
 /* Navbar */
@@ -104,29 +136,7 @@ body{
     transform: scale(1.05);
 }
 
-/* Phone number button */
-.header-phone-btn {
-    background-color: #eeede9;
-    color: black;
-    border: none;
-    font-size: 15px;
-    padding: 1rem 1rem;
-    border-radius: 999px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    width:175px;
-}
 
-.header-phone-btn:hover {
-    background-color: #d3d2ce;
-}
-
-
-.phone-icon{
-    font-size:1.1rem;
-    color : #fd7d13;
-}
 
 /********************************
 *******Main content Section******
@@ -134,4 +144,33 @@ body{
 
 .content{
     height:1500px;
+    padding-top:50px;
+}
+
+/********************************
+**Scroll to top button Section***
+********************************/
+
+.scroll-to-top-btn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 100%;
+    background:transparent;
+    border:none;
+    padding: 0;
+    cursor: pointer;
+    width: 3.5rem; 
+    height: 3.5rem;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.scroll-to-top-btn-icon{
+    width: 100%;
+    height: 100%;
+    color: #fd7d13;
+}
+
+.scroll-to-top-btn-icon:hover{
+    color:#cc640f;
 }

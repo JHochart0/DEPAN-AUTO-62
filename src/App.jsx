@@ -15,29 +15,27 @@ import EmailConfirmation from "./pages/EmailConfirmation.jsx";
 import Legal from "./pages/Legal.jsx";
 import NotFound404 from "./pages/NotFound404.jsx";
 
-
-
 function App() {
-  return (
-    <Router>
-        <div className="App">
-            <Header />
-            <div className="content">
-                <Routes>
-                    <Route path="/" element={<Home/>} />
-                    <Route path="/services" element={<Services/>} />
-                    <Route path="/photos" element={<Photos/>} />
-                    <Route path="/contact" element={<Contact/>} />
-                    <Route path="/email-sent" element={<EmailConfirmation/>} />
-                    <Route path="/legal" element={<Legal/>} />
-                    <Route path="*" element={<NotFound404/>} />
-                </Routes>
+    return (
+        <Router>
+            <div className="App">
+                <Header />
+                <div className="content">
+                    <Routes>
+                        <Route path="/" element={<Home/>} />
+                        <Route path="/services" element={<Services/>} />
+                        <Route path="/photos" element={<Photos/>} />
+                        <Route path="/contact" element={<Contact/>} />
+                        <Route path="/email-sent" element={<EmailConfirmation/>} />
+                        <Route path="/legal" element={<Legal/>} />
+                        <Route path="*" element={<NotFound404/>} />
+                    </Routes>
+                </div>
+                <ScrollToTopButton />
+                <Footer />
             </div>
-            <ScrollToTopButton />
-            <Footer />
-        </div>
-    </Router>
-  );
+        </Router>
+    );
 }
 
 export default App;

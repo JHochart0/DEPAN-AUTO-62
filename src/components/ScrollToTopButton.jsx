@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleChevronUp } from '@fortawesome/free-solid-svg-icons';
+
 function ScrollToTopButton() {
 
     //variable to check when the button must be visible or not
@@ -24,13 +27,15 @@ function ScrollToTopButton() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-  return (
-    <>
-      {visible && (
-        <button onClick={scrollToTop} className="scroll-to-top-btn" aria-label="Remonter en haut de la page">↑</button>
-      )}
-    </>
-  );
+    return (
+        <>
+        {visible && (
+            <button onClick={scrollToTop} className="scroll-to-top-btn" aria-label="Remonter en haut de la page">
+                <FontAwesomeIcon className="scroll-to-top-btn-icon" icon={faCircleChevronUp} />
+            </button>
+        )}
+        </>
+    );
 }
 
 export default ScrollToTopButton;
