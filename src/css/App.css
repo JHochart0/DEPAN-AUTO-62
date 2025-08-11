@@ -22,10 +22,12 @@ body{
 
 /* Logo */
 .logo{
+    font-family: "Inter", sans-serif;
     display: flex;
     align-items: center;
     background-color: #eeede9;
     border-radius: 999px;
+    width:375px;
     padding: 16px;
     text-decoration:none;
 }
@@ -93,6 +95,7 @@ body{
 *********Header Section**********
 ********************************/
 
+/*Header*/
 .header-container{
     position: sticky;
     z-index: 1000;
@@ -142,6 +145,7 @@ body{
 *******Main content Section******
 ********************************/
 
+/*main content of the site*/
 .content{
     height:1500px;
     padding-top:50px;
@@ -151,6 +155,7 @@ body{
 **Scroll to top button Section***
 ********************************/
 
+/*Button scroll to top*/
 .scroll-to-top-btn{
     position: fixed;
     bottom: 30px;
@@ -173,4 +178,118 @@ body{
 
 .scroll-to-top-btn-icon:hover{
     color:#cc640f;
+}
+
+/********************************
+*********Footer Section**********
+********************************/
+
+/*Footer*/
+.footer-container{
+    background-color: #c0c0c0;
+    font-family: "Inter", sans-serif;
+    padding: 40px 100px 20px;
+    border-top: 1px solid #3030301f;
+    box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.445);
+}
+
+/* first part of the header*/
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*left side of the header (reviews)*/
+.footer-reviews{
+    flex: 1;
+    max-width: 500px;
+    border: 1px solid #303030;
+    padding: 20px;
+    text-align: center;
+}
+
+/*center of the header (informations)*/
+.footer-informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.footer-facebook-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4267b2;
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.footer-facebook-button:hover {
+    background-color: #365899;
+}
+
+.footer-facebook-logo{
+    color: #eeede9;
+}
+
+/*right side of the header (schedules)*/
+.footer-schedules{
+    background-color: #eeede9;
+    flex: 1;
+    min-width: 400px;
+    max-width: 500px;
+    border-radius:50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-schedules-h1{
+    color: #fd7d13;
+    margin-bottom: 10px;
+}
+
+.footer-schedules-hours{
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    grid-template-columns: repeat(2, auto); 
+    grid-template-rows: repeat(2, auto);
+    gap: 10px 20px;
+}
+
+.footer-schedules-h3{
+    font-weight:500;
+}
+
+/*Second part of the header (for legals part)*/
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #303030;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-copyright{
+    margin-bottom:5px;
+}
+
+#footer-legalLink{
+    margin-top: 5px;
+    color: #0077ff;
+    text-decoration: none;
+}
+
+#footer-legalLink:hover {
+    text-decoration: underline;
 }

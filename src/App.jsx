@@ -3,6 +3,7 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import './css/App.css'
 
+import ScrollToTop from "./components/ScrollToTop.jsx";
 import Header from './components/Header.jsx';
 import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
 import Footer from './components/Footer.jsx';
@@ -15,9 +16,11 @@ import EmailConfirmation from "./pages/EmailConfirmation.jsx";
 import Legal from "./pages/Legal.jsx";
 import NotFound404 from "./pages/NotFound404.jsx";
 
+
 function App() {
     return (
         <Router>
+            <ScrollToTop />
             <div className="App">
                 <Header />
                 <div className="content">
