@@ -6,13 +6,29 @@ import PhoneButton from './PhoneButton';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 function Footer() {
     return (
         <footer className="footer-container">
             <div className="footer-top">
                 <div className="footer-reviews">
-                    IL FAUT FAIRE LES REVIEWS ICI
+                    <h2 className="footer-reviews-h2">Des clients satisfaits !</h2>
+                    <div className="footer-reviews-stars">
+                        <FontAwesomeIcon icon={faStar} />
+                        <FontAwesomeIcon icon={faStar} />
+                        <FontAwesomeIcon icon={faStar} />
+                        <FontAwesomeIcon icon={faStar} />
+                        <FontAwesomeIcon icon={faStar} />
+                    </div>
+                    <a 
+                        className="footer-reviews-button" 
+                        href="https://www.facebook.com/profile.php?id=61577391726886&sk=reviews" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        Consulter les avis
+                    </a>
                 </div>
                 <div className="footer-informations">
                     <Logo />

@@ -30,7 +30,11 @@ function ScrollToTopButton() {
     return (
         <>
         {visible && (
-            <button onClick={scrollToTop} className="scroll-to-top-btn" aria-label="Remonter en haut de la page">
+            <button 
+                onClick={scrollToTop} 
+                className="scroll-to-top-btn" 
+                aria-label="Remonter en haut de la page"
+            >
                 <FontAwesomeIcon className="scroll-to-top-btn-icon" icon={faCircleChevronUp} />
             </button>
         )}
