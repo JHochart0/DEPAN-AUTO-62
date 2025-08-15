@@ -3,6 +3,7 @@ import React from 'react';
 import NavLink from "./NavLink.jsx";
 import Logo from './Logo';
 import PhoneButton from './PhoneButton';
+import Schedules from './Schedules.jsx';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
@@ -37,15 +38,8 @@ function Footer() {
                         <FontAwesomeIcon icon={faFacebookF} className="footer-facebook-logo" />
                     </a>
                 </div>
-                <div className="footer-schedules">
-                    <h1 className="footer-schedules-h1">Nos horaires</h1>
-                    <div className="footer-schedules-hours">
-                        <h2 className="footer-schedules-h2">Lun - Sam</h2>
-                        <h3 className="footer-schedules-h3">8h30 - 19h00</h3>
-                        <h2 className="footer-schedules-h2">Dimanche</h2>
-                        <h3 className="footer-schedules-h3">Fermé</h3>
-                    </div>
-                </div>
+                <Schedules className="footer"/>
+                
             </div>
             <div className="footer-bottom">
                 <p className="footer-copyright">© Tous droits réservés | DEPAN AUTO 62</p>

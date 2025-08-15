@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import '../css/Contact.css'
+
+import Schedules from '../components/Schedules';
+import NavLink from "../components/NavLink.jsx";
+
+
 
 function Contact() {
     const [isFbLoaded, setIsFbLoaded] = useState(false);
@@ -16,13 +23,62 @@ function Contact() {
                 clearInterval(checkFbInterval);
             }
         }, 300);
-
-        
     }, []);
+
+    // function to check if the email typed in the form is corresponding to the good format
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // if ok, we submit the form
+        e.target.submit();
+    };
 
     return (
         <div className="contact-container">
-            <h2 className="contact-fb-page-title">Page Facebook</h2>
+            <div className="contact-first-part">
+                <div className="contact-informations-container">
+                    <h1 className="contact-informations-title">Informations</h1>
+                    <p className="contact-informations-phone">Téléphone : <span>07 49 70 57 35</span></p>
+                    <Schedules className="contact-informations" />
+                    <a className="contact-informations-email-button" href="mailto:depan-auto-62@outlook.fr">
+                        <FontAwesomeIcon icon={faEnvelope} className="social-icon" /> Envoyer un mail
+                    </a>
+                    <h4 className="contact-informations-required-fields">*Champs Obligatoires</h4>
+                    <p className="contact-informations-personal-data">
+                        Les données personnelles que vous nous communiquez sont utilisées par DEPAN AUTO 62 aux seules fins de répondre à votre prise de rendez-vous.
+                    </p>
+                    <NavLink to="/legal" content="En savoir plus sur la politique de confidentialité" className="contact-informations-legal-link"/>
+                </div> 
+                <div className="contact-form-container">
+                    <h1 className="contact-title">Prendre rendez-vous</h1>
+                    <form
+                        onSubmit={handleSubmit}
+                        action="https://formsubmit.co/6fb952b90f78235eea697297767b28be"
+                        method="POST"
+                        className="contact-form"
+                    >
+                
+                        <input type="text" name="Nom" placeholder="Nom*" required />
+                        <input type="text" name="Prenom" placeholder="Prénom*" required />
+                        <input type="text" name="Adresse d'intervention" placeholder="Adresse d'intervention*" required />
+                        <input type="tel" name="Numéro de téléphone" placeholder="Numéro de téléphone*" required />
+                        <input type="text" name="Plaque d'immatriculation" placeholder="Plaque d'immatriculation*" required></input>
+                        <select name="Prestation souhaitée" required>
+                            <option value="" disabled selected hidden>Prestation souhaitée*</option>
+                            <option value="prestation1">Prestation 1</option>
+                            <option value="prestation2">Prestation 2</option>
+                            <option value="prestation3">Prestation 3</option>
+                        </select>
+
+                        <button type="submit" className="contact-submit">Envoyer</button>
+
+                        <input type="hidden" name="_template" value="table" />
+                        <input type="hidden" name="_subject" value="Prise de rendez-vous depuis le site DEPAN AUTO 62"></input>
+                        <input type="hidden" name="_next" value="http://localhost:5173/#/email-sent" />
+                    </form>
+                </div>
+            </div>
+            <div className="contact-second-part">
+                <h2 className="contact-fb-page-title">Page Facebook</h2>
 
                 {!isFbLoaded && (
                 <div className="fb-loader">
@@ -49,6 +105,8 @@ function Contact() {
                         </a>
                     </blockquote>
                 </div>
+            </div>
+            
 
         </div>
     );
