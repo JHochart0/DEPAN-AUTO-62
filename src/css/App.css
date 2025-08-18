@@ -212,7 +212,7 @@ body{
     background-color: #eeede9;
     flex: 1;
     min-width: 400px;
-    max-width: 500px;
+    max-width: 400px;
     min-height:140px;
     border-radius:50%;
     padding: 20px;

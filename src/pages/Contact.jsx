@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import '../css/Contact.css'
 
@@ -37,7 +37,10 @@ function Contact() {
             <div className="contact-first-part">
                 <div className="contact-informations-container">
                     <h1 className="contact-informations-title">Informations</h1>
-                    <p className="contact-informations-phone">Téléphone : <span>07 49 70 57 35</span></p>
+                    <p className="contact-informations-phone">
+                        <FontAwesomeIcon className="contact-informations-phone-icon" icon={faPhone} />
+                        Téléphone : <span>07 49 70 57 35</span>
+                    </p>
                     <Schedules className="contact-informations" />
                     <a className="contact-informations-email-button" href="mailto:depan-auto-62@outlook.fr">
                         <FontAwesomeIcon icon={faEnvelope} className="social-icon" /> Envoyer un mail
@@ -46,8 +49,9 @@ function Contact() {
                     <p className="contact-informations-personal-data">
                         Les données personnelles que vous nous communiquez sont utilisées par DEPAN AUTO 62 aux seules fins de répondre à votre prise de rendez-vous.
                     </p>
-                    <NavLink to="/legal" content="En savoir plus sur la politique de confidentialité" className="contact-informations-legal-link"/>
+                    <NavLink to="/legal" content="En savoir plus sur la politique de confidentialité" id="contact-informations-legal-link"/>
                 </div> 
+
                 <div className="contact-form-container">
                     <h1 className="contact-title">Prendre rendez-vous</h1>
                     <form
