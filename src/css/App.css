@@ -147,8 +147,7 @@ body{
 
 /*main content of the site*/
 .content{
-    height:1500px;
-    padding-top:50px;
+    min-height:80vh;
 }
 
 /********************************
@@ -196,6 +195,7 @@ body{
     padding: 40px 100px 20px;
     border-top: 1px solid #3030301f;
     box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.445);
+    margin-top:100px;
 }
 
 /* first part of the header*/

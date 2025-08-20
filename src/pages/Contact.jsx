@@ -34,6 +34,12 @@ function Contact() {
 
     return (
         <div className="contact-container">
+            <div className="contact-banner">
+                <div className="contact-banner-title">
+                    <h1>Besoin d'un dépannage ou d'un renseignement ?</h1>
+                    <h1>Contactez-nous dès maintenant !</h1>
+                </div>
+            </div>
             <div className="contact-first-part">
                 <div className="contact-informations-container">
                     <h1 className="contact-informations-title">Informations</h1>
@@ -53,7 +59,7 @@ function Contact() {
                 </div> 
 
                 <div className="contact-form-container">
-                    <h1 className="contact-title">Prendre rendez-vous</h1>
+                    <h1 className="contact-form-title">Prendre rendez-vous</h1>
                     <form
                         onSubmit={handleSubmit}
                         action="https://formsubmit.co/6fb952b90f78235eea697297767b28be"
@@ -82,7 +88,7 @@ function Contact() {
                 </div>
             </div>
             <div className="contact-second-part">
-                <h2 className="contact-fb-page-title">Page Facebook</h2>
+                <h2 className="contact-fb-page-title">Notre page Facebook</h2>
 
                 {!isFbLoaded && (
                 <div className="fb-loader">

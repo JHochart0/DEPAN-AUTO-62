@@ -6,6 +6,8 @@
     flex-direction:column;
     margin:auto;
     width:25vw;
+    height:100%;
+    padding-top:10vh;
     justify-content:center;
     align-items:center;
 }
@@ -38,7 +40,6 @@
 
 #notFound404-btn:hover{
     color:#fd7d13;
-    background-color:#d3d2ce;
     transform: scale(1.05);
 }
 
