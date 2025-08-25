@@ -34,13 +34,16 @@ function Contact() {
 
     return (
         <div className="contact-container">
+            {/* Banner */}
             <div className="contact-banner">
                 <div className="contact-banner-title">
                     <h1>Besoin d'un dépannage ou d'un renseignement ?</h1>
                     <h1>Contactez-nous dès maintenant !</h1>
                 </div>
             </div>
+            {/* First part of the contact page (with informations and form) */}
             <div className="contact-first-part">
+                {/* Informations */}
                 <div className="contact-informations-container">
                     <h1 className="contact-informations-title">Informations</h1>
                     <p className="contact-informations-phone">
@@ -57,7 +60,7 @@ function Contact() {
                     </p>
                     <NavLink to="/legal" content="En savoir plus sur la politique de confidentialité" id="contact-informations-legal-link"/>
                 </div> 
-
+                {/* Form */}
                 <div className="contact-form-container">
                     <h1 className="contact-form-title">Prendre rendez-vous</h1>
                     <form
@@ -66,7 +69,6 @@ function Contact() {
                         method="POST"
                         className="contact-form"
                     >
-                
                         <input type="text" name="Nom" placeholder="Nom*" required />
                         <input type="text" name="Prenom" placeholder="Prénom*" required />
                         <input type="text" name="Adresse d'intervention" placeholder="Adresse d'intervention*" required />
@@ -78,7 +80,6 @@ function Contact() {
                             <option value="prestation2">Prestation 2</option>
                             <option value="prestation3">Prestation 3</option>
                         </select>
-
                         <button type="submit" className="contact-submit">Envoyer</button>
 
                         <input type="hidden" name="_template" value="table" />
@@ -87,6 +88,7 @@ function Contact() {
                     </form>
                 </div>
             </div>
+            {/* Second part of the contact page (facebook page)*/}
             <div className="contact-second-part">
                 <h2 className="contact-fb-page-title">Notre page Facebook</h2>
 
@@ -116,8 +118,6 @@ function Contact() {
                     </blockquote>
                 </div>
             </div>
-            
-
         </div>
     );
 }

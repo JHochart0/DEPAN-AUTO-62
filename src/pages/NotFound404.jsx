@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import NavLink from "../components/NavLink.jsx";
 
-import '../css/NotFound404.css'
+import '../css/NotFound404.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
