@@ -4,13 +4,17 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import '../css/Contact.css'
 
+import useRevealOnScroll from "../hooks/useRevealOnScroll";
+
 import Schedules from '../components/Schedules';
 import NavLink from "../components/NavLink.jsx";
 
 
 
 function Contact() {
+    useRevealOnScroll(".fade-in-up, .fade-in-side-left, .fade-in-side-right");
     const [isFbLoaded, setIsFbLoaded] = useState(false);
+    const [rdvPlace, setRdvPlace] = useState("");
 
     // change the title of the page and load the facebook widget
     useEffect(() => {
@@ -36,7 +40,7 @@ function Contact() {
         <div className="contact-container">
             {/* Banner */}
             <div className="contact-banner">
-                <div className="contact-banner-title">
+                <div className="contact-banner-title fade-in-up">
                     <h1>Besoin d'un dépannage ou d'un renseignement ?</h1>
                     <h1>Contactez-nous dès maintenant !</h1>
                 </div>
@@ -44,7 +48,7 @@ function Contact() {
             {/* First part of the contact page (with informations and form) */}
             <div className="contact-first-part">
                 {/* Informations */}
-                <div className="contact-informations-container">
+                <div className="contact-informations-container fade-in-side-left">
                     <h1 className="contact-informations-title">Informations</h1>
                     <p className="contact-informations-phone">
                         <FontAwesomeIcon className="contact-informations-phone-icon" icon={faPhone} />
@@ -61,7 +65,7 @@ function Contact() {
                     <NavLink to="/legal" content="En savoir plus sur la politique de confidentialité" id="contact-informations-legal-link"/>
                 </div> 
                 {/* Form */}
-                <div className="contact-form-container">
+                <div className="contact-form-container fade-in-side-right">
                     <h1 className="contact-form-title">Prendre rendez-vous</h1>
                     <form
                         onSubmit={handleSubmit}
@@ -71,7 +75,16 @@ function Contact() {
                     >
                         <input type="text" name="Nom" placeholder="Nom*" required />
                         <input type="text" name="Prenom" placeholder="Prénom*" required />
-                        <input type="text" name="Adresse d'intervention" placeholder="Adresse d'intervention*" required />
+                        <select name="Lieu de rendez-vous" value={rdvPlace} onChange={(e) => setRdvPlace(e.target.value)} required >
+                            <option value="" disabled selected hidden>Lieu de rendez-vous*</option>
+                            <option value="À domicile">À domicile</option>
+                            <option value="À notre garage">À notre garage</option>
+                        </select>
+
+                        {rdvPlace === "À domicile" && (
+                            <input type="text" name="Adresse d'intervention" placeholder="Adresse d'intervention*" required />
+                        )}
+                        
                         <input type="tel" name="Numéro de téléphone" placeholder="Numéro de téléphone*" required />
                         <input type="text" name="Plaque d'immatriculation" placeholder="Plaque d'immatriculation*" required></input>
                         <select name="Prestation souhaitée" required>
@@ -89,7 +102,7 @@ function Contact() {
                 </div>
             </div>
             {/* Second part of the contact page (facebook page)*/}
-            <div className="contact-second-part">
+            <div className="contact-second-part fade-in-up">
                 <h2 className="contact-fb-page-title">Notre page Facebook</h2>
 
                 {!isFbLoaded && (

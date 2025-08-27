@@ -119,26 +119,32 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #eeede9;
-    padding: 0px 0.5rem;
     border-radius: 999px;
     
 }
 
 /* Links in the navbar*/
-.header-navbar .navLink{
+.header-navbar .navLink {
     color: black;
     text-decoration: none;
     font-weight: bold;
-    font-size : 1rem;
+    font-size: 1rem;
     padding: 1rem 1.5rem;
-    transition: color 0.2s ease, transform 0.1s ease;
+    transition: color 0.2s ease, transform 0.1s ease, background 0.2s;
+    border-radius: 50px;
 }
+
 
 .header-navbar .navLink:hover{
     color: #fd7d13;
     transform: scale(1.05);
 }
 
+.header-navbar .navLink.active {
+    background-color:#545253;
+    color : white;
+    transform: scale(1.05);
+}
 
 
 /********************************

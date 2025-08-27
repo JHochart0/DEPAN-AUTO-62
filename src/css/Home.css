@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+/* Animations de base */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease-out;
+}
+
+.fade-in-side-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease-out;
+}
+
+.fade-in-side-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease-out;
+}
+
+/* Quand l’élément est visible */
+.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
 
 /*********************************
 **********Home container**********
@@ -43,7 +67,7 @@
     background-color: #eeede9;
     border-radius: 20px;
     padding: 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
 }
 
 .home-contact-section h1 {
@@ -81,6 +105,7 @@
 /*********************************
 ************Home intro************
 *********************************/
+
 .home-intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -91,9 +116,10 @@
 
 .home-intro-left-side{
     background-color:darkGrey;
-    background-image: url('/photos_depan_auto_62/depan_auto_62_prestation_exemple1.jpg');
+    background-image: url('/photos_depan_auto_62/depan_auto_62_accueil1.jpg');
     background-size: cover;
     background-position: center;
+    border-right: 3px solid #fd7d13;
 }
 
 .home-intro-right-side{
@@ -103,6 +129,7 @@
     text-align:justify;
     padding: 150px;
     background-color: #eeede9;
+    border-left: 3px solid #fd7d13;
 }
 
 .home-intro-right-side h2{
@@ -117,29 +144,102 @@
     margin-bottom:10px;
 }
 
-/* Atouts */
-.home-benefits {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+/*********************************
+*********Geographic zone**********
+*********************************/
+.home-zone {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    min-height: 60vh;
 }
 
+.home-zone-right {
+    background-color: darkGrey;
+    background-image: url('/photos_depan_auto_62/depan_auto_62_zone_de_chalandise.jpg'); /* à remplacer par ta carte ou ton hangar */
+    background-size: cover;
+    background-position: center;
+    border-left: 3px solid #fd7d13;
+}
+
+.home-zone-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    padding: 150px;
+    background-color: #eeede9;
+    border-right: 3px solid #fd7d13;
+}
+
+.home-zone-left h2 {
+    color: #fd7d13;
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+}
+
+.home-zone-left p {
+    font-size: 1.2rem;
+    width: 85%;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/*********************************
+********Benefits section**********
+*********************************/
+
+.home-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 100px 0;
+    width: 55vw;
+    border-radius:50px;
+    padding: 30px 20px;
+    background-color: #eeede9;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+}
+
+.home-benefits h1 {
+    width: 100%;
+    text-align: center;
+    color: #fd7d13;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* each benefit card */
 .benefit-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     background-color: #eeede9;
+    padding: 25px 20px;
     border-radius: 20px;
-    min-width: 150px;
+    min-width: 160px;
+    max-width: 220px;
     text-align: center;
-    box-shadow: inset 0px 2px 5px rgba(0,0,0,0.3), inset 0px -2px 5px rgba(0,0,0,0.3);
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.15), inset 0 -2px 5px rgba(0,0,0,0.15);
     transition: transform 0.2s ease;
 }
 
 .benefit-card:hover {
     transform: translateY(-5px);
+
+}
+
+/* Icons */
+.benefit-card svg {
+    color: #fd7d13;
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #303030;
 }
 
 /* Prestations */
