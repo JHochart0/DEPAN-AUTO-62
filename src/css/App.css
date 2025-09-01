@@ -3,10 +3,6 @@
 /********************************
 *********Global Section**********
 ********************************/
-html, body {
-    overflow-x: hidden;
-}
-
 *{
     margin: 0;
 }
@@ -156,6 +152,7 @@ body{
 
 /*main content of the site*/
 .content{
+    overflow : hidden;
     min-height:80vh;
 }
 
