@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+/*********************************
+**********Legal container*********
+*********************************/
+.legal-container {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/*********************************
+**********Legal main title********
+*********************************/
+
+.legal-container h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #111;
+}
+
+/*********************************
+*******Legal section title********
+*********************************/
+
+/* Legal section */
+.legal-section{
+    min-width:50vw;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease;
+}
+
+/* Legal section Secondary titles */
+.legal-section h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #fd7d13;
+    padding-left: 0.6rem;
+    color: #fd7d13;
+}
+
+/* Legal section texts */
+.legal-section-text p{
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+/*********************************
+*******Privacy section title******
+*********************************/
+
+/* Privacy section */
+.privacy-section{
+    min-width:50vw;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    transition: transform 0.2s ease;
+}
+
+/* Privacy section Secondary titles*/
+.privacy-section h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #fd7d13;
+    padding-left: 0.6rem;
+    color: #fd7d13;
+}
+
+/* Privacy List */
+.privacy-section-text ul {
+    list-style: disc inside;
+    margin: 0.5rem 0 1rem 0.5rem;
+    padding-left: 1rem;
+}
+
+.privacy-section-text li {
+    margin-bottom: 0.4rem;
+}
+
+/* Privacy section texts */
+.privacy-section-text p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+/* Privacy section links */
+.privacy-section-text a {
+    color: #0077ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+    border-bottom: 1px dashed transparent;
+}
+
+.privacy-section-text a:hover {
+    color: #0056cc;
+    border-bottom: 1px dashed #0056cc;
+}
+
+/* Privacy Subtitles */
+.privacy-section-text h3 {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #222;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.3rem;
+}

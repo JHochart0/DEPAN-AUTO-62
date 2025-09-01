@@ -43,7 +43,7 @@ function Footer() {
             </div>
             <div className="footer-bottom">
                 <p className="footer-copyright">© Tous droits réservés | DEPAN AUTO 62</p>
-                <NavLink to="/legal" content="Mentions légales et politiques de confidentialité" id="footer-legalLink" />
+                <NavLink to="/legal" content="Mentions légales et politique de confidentialité" id="footer-legalLink" />
             </div>
         </footer>
     );
