@@ -47,24 +47,27 @@
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    height: 50vh;
-    padding-bottom: 20px; 
+    height: 60vh;
+    background-color:#545253;
+}
 
+.contact-banner-img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    display: block;
+}
+
+
+.contact-banner-title{
+    position: absolute;
+    margin-bottom: 20px;
     font-size: 1.5rem;
     font-weight: 800;
     color: #fd7d13;
     text-shadow: #000 1px 0 10px;
     text-align: center;
-    background-color:#545253;
-    
-    background-image: url('/photos_depan_auto_62/depan_auto_62_voiture_floquee.jpg');
-    background-size: 75% auto;
-    background-position: center 40%;
-    background-repeat: no-repeat;
-    
-}
-
-.contact-banner-title{
     padding:20px;
     background-color: rgba(0,0,0,0.3);
 }

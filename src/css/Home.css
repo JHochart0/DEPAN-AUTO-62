@@ -40,20 +40,22 @@
 *********************************/
 
 .home-banner {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: #545253;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
 
-    padding-bottom: 40px;
-    width: 100%;
-    height: 60vh;
-
-    background-image: url('/photos_depan_auto_62/depan_auto_62_banniere.jpg');
-    background-size: 70% auto;
-    background-position: center 40%;
-    background-repeat: no-repeat;
-
-    background-color:#545253;
+.home-banner img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
 }
 
 /*********************************
@@ -115,12 +117,18 @@
 }
 
 .home-intro-left-side{
-    background-color:darkGrey;
-    background-image: url('/photos_depan_auto_62/depan_auto_62_accueil1.jpg');
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    overflow: hidden;
     border-right: 3px solid #fd7d13;
 }
+
+.home-intro-left-side img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 
 .home-intro-right-side{
     display: flex;
@@ -155,12 +163,19 @@
 }
 
 .home-zone-right {
-    background-color: darkGrey;
-    background-image: url('/photos_depan_auto_62/depan_auto_62_zone_de_chalandise.jpg'); /* à remplacer par ta carte ou ton hangar */
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    overflow: hidden;
     border-left: 3px solid #fd7d13;
+    
 }
+
+.home-zone-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 
 .home-zone-left {
     display: flex;

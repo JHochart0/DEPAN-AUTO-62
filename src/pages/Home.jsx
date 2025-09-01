@@ -21,7 +21,9 @@ function Home() {
         <div className="home-container">
             
             {/* Banner */}
-            <div className="home-banner fade-in-up"></div>
+            <div className="home-banner">
+                <img  src="/photos_depan_auto_62/depan_auto_62_banniere.jpg" alt="Bannière Dépan Auto 62" className="fade-in-up"/>
+            </div>
 
             {/* Contact section */}
             <div className="home-contact-section fade-in-up">
@@ -32,7 +34,9 @@ function Home() {
 
             {/* Introduction */}
             <div className="home-intro">
-                <div className="home-intro-left-side fade-in-side-left"></div>
+                <div className="home-intro-left-side fade-in-side-left">
+                    <img src="/photos_depan_auto_62/depan_auto_62_accueil1.jpg" alt="accueil vitrine" />
+                </div>
                 <div className="home-intro-right-side fade-in-side-right">
                     <h2 className="home-intro-right-side-h2">Votre dépanneur automobile dans le Pas-de-Calais</h2>
                     <p className="home-intro-right-side-p">
@@ -57,7 +61,9 @@ function Home() {
                         Pour tout problème avec votre véhicule, nous assurons un dépannage rapide <strong>à votre domicile</strong> ou vous accueillons <strong>sur rendez-vous dans notre garage</strong>.
                     </p>
                 </div>
-                <div className="home-zone-right fade-in-side-right"></div>
+                <div className="home-zone-right fade-in-side-right">
+                    <img src="/photos_depan_auto_62/depan_auto_62_zone_de_chalandise.jpg" alt="Zone de chalandise" />
+                </div>
             </div>
 
             {/* Benefits section */}
