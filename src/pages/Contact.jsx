@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
-import '../css/Contact.css'
+import '../css/Contact.css';
 
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
 
@@ -12,9 +12,10 @@ import NavLink from "../components/NavLink.jsx";
 
 
 function Contact() {
-    useRevealOnScroll(".fade-in-up, .fade-in-side-left, .fade-in-side-right");
     const [isFbLoaded, setIsFbLoaded] = useState(false);
     const [rdvPlace, setRdvPlace] = useState("");
+
+    useRevealOnScroll(".fade-in-up, .fade-in-side-left, .fade-in-side-right");
 
     // change the title of the page and load the facebook widget
     useEffect(() => {

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/*********************************
+*************Animations***********
+*********************************/
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease-out;
+}
+
+.fade-in-side-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease-out;
+}
+
+.fade-in-side-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+/*********************************
+********Services container********
+*********************************/
+.services-container {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+/*********************************
+*********Services banner**********
+*********************************/
+.services-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background-color:#545253;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.445);
+}
+
+.services-banner-img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    filter: drop-shadow(0 0 0.55rem black);
+}
+
+
+.services-banner-title{
+    position: absolute;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #fd7d13;
+    text-shadow: #000 1px 0 10px;
+    text-align: center;
+    padding:20px;
+    background-color: rgba(0,0,0,0.3);
+}
