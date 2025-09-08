@@ -93,7 +93,7 @@ function Services() {
 
                     <ServiceCard
                         title="Système électronique"
-                        description="Dépannage et révision des pièces électriques et électroniques."
+                        description="Dépannage et révision des pièces électroniques."
                         details={[
                             { name: "Passage valise diagnostic", price: "30€ (1h00)" },
                             { name: "Recherche de panne", price: "30€ (1h00)" },
