@@ -1,62 +1,85 @@
 .service-card {
-  background-color: #eeede9;
-  border-radius: 15px;
-  padding: 20px;
-  margin: 15px 0;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-  cursor: pointer;
+    background-color: #eeede9;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    min-width:20vw;
+}
+
+.service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .service-card.open {
-  transform: translateY(-3px);
+    transform: translateY(-3px);
 }
 
 .service-card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .service-card-header h2 {
-  font-size: 1.3rem;
-  color: #fd7d13;
-  margin: 0;
+    font-size: 1.3rem;
+    color: #fd7d13;
+    margin: 0;
 }
 
 .service-card-icon {
-  color: #fd7d13;
-  font-size: 1.2rem;
-  transition: transform 0.3s ease;
+    color: #fd7d13;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
 }
 
 .service-card-description {
-  margin: 10px 0;
-  font-size: 1rem;
-  color: #444;
+    margin: 10px 0;
+    font-size: 0.9rem !important;
+    color: #444;
+    font-weight: bold;
 }
 
-/* Contenu caché */
+/*********************************
+**********Hidden content**********
+*********************************/
 .service-card-details {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-  opacity: 0;
-  margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
 }
 
 .service-card-details.show {
-  max-height: 500px; /* assez grand pour tout contenir */
-  opacity: 1;
+    max-height: 2000px;
+    opacity: 1;
 }
+
 
 .service-card-details ul {
-  padding-left: 20px;
-  margin: 0;
+    padding-left: 20px;
+    color: #fd7d13;
+    border-top: 3px dotted #fa892d;
+    padding-top: 20px;
+    margin-top: 20px;
 }
 
+
 .service-card-details li {
-  font-size: 0.95rem;
-  color: #333;
-  margin-bottom: 5px;
+    color: #333;
+    margin:10px 0px;
+    text-align:left;
+}
+
+.service-card-details ul li::marker {
+    color: #fd7d13;
+    font-size: 1.2rem;
+}
+
+.service-card-details-price{
+    color: #fd7d13;
+    font-weight: bold;
 }

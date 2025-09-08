@@ -24,7 +24,7 @@ function EmailConfirmation() {
                 Merci pour votre prise de contact.
             </h2>
             <h2 className="emailConfirmation-h2">
-                Nous faisons tout notre possible pour vous répondre le plus rapidement possible !
+                Nous faisons tout notre possible pour vous recontacter le plus rapidement !
             </h2>
             <NavLink to="/" content="Retour à l'accueil" id="emailConfirmation-btn">
                 <FontAwesomeIcon className="emailConfirmation-btn-icon" icon={faArrowLeft} />

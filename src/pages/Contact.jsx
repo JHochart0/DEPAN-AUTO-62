@@ -91,9 +91,11 @@ function Contact() {
                         <input type="text" name="Plaque d'immatriculation" placeholder="Plaque d'immatriculation*" required></input>
                         <select name="Prestation souhaitée" required>
                             <option value="" disabled selected hidden>Prestation souhaitée*</option>
-                            <option value="prestation1">Prestation 1</option>
-                            <option value="prestation2">Prestation 2</option>
-                            <option value="prestation3">Prestation 3</option>
+                            <option value="prestation1">Système de freinage</option>
+                            <option value="prestation2">Système de direction</option>
+                            <option value="prestation3">Système échappement</option>
+                            <option value="prestation4">Système moteur</option>
+                            <option value="prestation5">Système électronique</option>
                         </select>
                         <button type="submit" className="contact-submit">Envoyer</button>
 
