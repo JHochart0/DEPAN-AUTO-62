@@ -33,6 +33,28 @@ function Services() {
                 {/* List of services cards */}
                 <div className="services-cards-list">
                     <ServiceCard
+                        title="Système moteur"
+                        description="Diagnostic, entretien et réparation moteur."
+                        details={[
+                            { name: "Révision moteur + filtre à huile", price: "30€ (1h00)" },
+                            { name: "Révision moteur + tous les filtres", price: "45€ (1h30)" },
+                            { name: "Remplacement pompe lave-glace", price: "30€ (1h00)" },
+                            { name: "Remplacement réservoir liquide de frein", price: "30€ (1h00)" },
+                            { name: "Remplacement support moteur", price: "30€ (1h00)" },
+                            { name: "Remplacement débitmètre d'air", price: "30€ (1h00)" },
+                            { name: "Remplacement vanne EGR", price: "30€ (1h00)" },
+                            { name: "Remplacement démarreur", price: "30€ (1h00)" },
+                            { name: "Remplacement alternateur", price: "30€ (1h00)" },
+                            { name: "Remplacement courroie d'accessoire", price: "30€ (1h00)" },
+                            { name: "Remplacement galet tendeur courroie d'accessoire", price: "30€ (1h00)" },
+                            { name: "Remplacement bougie d'allumage", price: "30€ (1h00)" },
+                            { name: "Remplacement bobine d'allumage", price: "30€ (1h00)" },
+                            { name: "Remplacement faisceaux d'allumage", price: "30€ (1h00)" },
+                            { name: "Remplacement huile boîte de vitesses", price: "30€ (1h00)" }
+                        ]}
+                    />
+                    
+                    <ServiceCard
                         title="Système de freinage"
                         description="Contrôle, entretien et remplacement de vos freins."
                         details={[
@@ -66,28 +88,6 @@ function Services() {
                             { name: "Remplacement intermédiaire", price: "30€ (1h00)" },
                             { name: "Remplacement silent bloc échappement", price: "30€ (1h00)" },
                             { name: "Remplacement échappement complet", price: "30€ (1h00)" }
-                        ]}
-                    />
-
-                    <ServiceCard
-                        title="Système moteur"
-                        description="Diagnostic, entretien et réparation moteur."
-                        details={[
-                            { name: "Révision moteur + filtre à huile", price: "30€ (1h00)" },
-                            { name: "Révision moteur + tous les filtres", price: "45€ (1h30)" },
-                            { name: "Remplacement pompe lave-glace", price: "30€ (1h00)" },
-                            { name: "Remplacement réservoir liquide de frein", price: "30€ (1h00)" },
-                            { name: "Remplacement support moteur", price: "30€ (1h00)" },
-                            { name: "Remplacement débitmètre d'air", price: "30€ (1h00)" },
-                            { name: "Remplacement vanne EGR", price: "30€ (1h00)" },
-                            { name: "Remplacement démarreur", price: "30€ (1h00)" },
-                            { name: "Remplacement alternateur", price: "30€ (1h00)" },
-                            { name: "Remplacement courroie d'accessoire", price: "30€ (1h00)" },
-                            { name: "Remplacement galet tendeur courroie d'accessoire", price: "30€ (1h00)" },
-                            { name: "Remplacement bougie d'allumage", price: "30€ (1h00)" },
-                            { name: "Remplacement bobine d'allumage", price: "30€ (1h00)" },
-                            { name: "Remplacement faisceaux d'allumage", price: "30€ (1h00)" },
-                            { name: "Remplacement huile boîte de vitesses", price: "30€ (1h00)" }
                         ]}
                     />
 
