@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/********************************
+**Scroll to top button Section***
+********************************/
+
+/*Button scroll to top*/
+.scroll-to-top-btn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 100%;
+    background:transparent;
+    border:none;
+    padding: 0;
+    cursor: pointer;
+    width: 3.5rem; 
+    height: 3.5rem;
+    clip-path: circle(50% at 50% 50%);
+    transition: transform 0.2s ease;
+    z-index: 750;
+}
+
+.scroll-to-top-btn:hover{
+    transform: translateY(-3px);
+}
+
+.scroll-to-top-btn-icon{
+    width: 100%;
+    height: 100%;
+    color: #fd7d13;  
+}
+
+.scroll-to-top-btn-icon:hover{
+    color:#db6d12;
+}
+
+/********************************
+****** Responsive Rules *********
+********************************/
+/* Mobiles (no tablets) */
+/* Mobile */
+@media (max-width: 600px) {
+    .scroll-to-top-btn {
+        bottom: 15px;
+        right: 15px;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

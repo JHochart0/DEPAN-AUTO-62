@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 import NavLink from "./NavLink.jsx";
 import Logo from './Logo';
 import PhoneButton from './PhoneButton';
@@ -9,6 +10,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
+import '../css/Footer.css';
+
+//this component is the Footer of each page
 function Footer() {
     return (
         <footer className="footer-container">
@@ -33,7 +37,7 @@ function Footer() {
                 </div>
                 <div className="footer-informations">
                     <Logo />
-                    <PhoneButton />
+                    <PhoneButton className="phone-btn"/>
                     <a className="footer-facebook-button" href="https://www.facebook.com/profile.php?id=61577391726886" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faFacebookF} className="footer-facebook-logo" />
                     </a>

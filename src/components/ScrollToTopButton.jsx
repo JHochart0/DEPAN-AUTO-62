@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronUp } from '@fortawesome/free-solid-svg-icons';
 
+import '../css/ScrollToTopButton.css';
+
+// this component is a simple button used to go back to the top of the page
 function ScrollToTopButton() {
 
     //variable to check when the button must be visible or not
