@@ -36,7 +36,7 @@ function App() {
                     </Routes>
                 </div>
                 <ScrollToTopButton />
-                
+                <Footer />
             </div>
         </Router>
     );

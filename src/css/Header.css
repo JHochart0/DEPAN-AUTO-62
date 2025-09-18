@@ -137,11 +137,18 @@
 ******** Burger Button **********
 ********************************/
 .burger-btn {
-    background: none;
-    border: none;
+    background-color: #eeede9;
+    border: 1px solid #d3d2ce;
+    border-radius: 12px;  
     font-size: 2rem;
     cursor: pointer;
     color: black;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.burger-btn:hover {
+    background-color: #fd7d13; 
+    color: white;
 }
 
 
@@ -183,7 +190,7 @@
     color: #ffffff;
 }
 
-
+/*overlay around the menu (dark overlay)*/
 .menu-overlay {
     position: fixed;
     top: 0;

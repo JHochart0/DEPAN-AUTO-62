@@ -20,11 +20,17 @@ function Header() {
 
     return (
         <header className="header-container">
+            {/* Logo */}
             <Logo />
 
             {/* Desktop navbar */}
             <Navbar className="header-navbar desktop-only"/>
 
+
+            
+
+            {/* Desktop PhoneButton */}
+            <PhoneButton className="phone-btn desktop-only" />
 
             {/* Burger button (tablets + mobiles) */}
             <button 
@@ -34,9 +40,6 @@ function Header() {
             >
                 <FontAwesomeIcon icon={faBars} />
             </button>
-
-            {/* Desktop PhoneButton */}
-            <PhoneButton className="phone-btn desktop-only" />
 
             {/* Mobile/Tablet menu */}
             {isMenuOpen && <div className={`menu-overlay ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}></div>}

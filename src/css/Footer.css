@@ -24,6 +24,9 @@
     gap: 20px;
 }
 
+/********************************
+*********Reviews Section*********
+********************************/
 /*left side of the header (reviews)*/
 .footer-reviews{
     background-color: #eeede9;
@@ -80,6 +83,9 @@
     box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 
+/********************************
+******Informations Section*******
+********************************/
 /*center of the header (informations)*/
 .footer-informations {
     display: flex;
@@ -111,16 +117,22 @@
     color: #eeede9;
 }
 
+/********************************
+*******Schedules Section*********
+********************************/
+
 /*right side of the header (schedules)*/
 .footer-schedules{
     background-color: #eeede9;
-    flex: 1;
     min-width: 400px;
     max-width: 500px;
     min-height:140px;
     border-radius:50%;
     padding: 20px;
-    text-align: center;
+    display: flex;               /* active Flexbox */
+    flex-direction: column;      /* empile verticalement h1 + heures */
+    justify-content: center;     /* centre verticalement */
+    align-items: center;         /* centre horizontalement */
     box-shadow: 
         inset 0px 2px 5px rgba(0, 0, 0, 0.445), 
         inset 0px -2px 5px rgba(0, 0, 0, 0.445);
@@ -144,6 +156,9 @@
     font-weight:500;
 }
 
+/********************************
+*********Legals Section**********
+********************************/
 /*Second part of the header (for legals part)*/
 .footer-bottom {
     margin-top: 20px;
@@ -165,4 +180,75 @@
 
 #footer-legalLink:hover {
     text-decoration: underline;
+}
+
+/********************************
+****** Responsive Rules ********
+********************************/
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+
+    .footer-informations {
+        order: -1;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 20px 0px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-reviews,
+    .footer-schedules {
+        min-width: 85%;
+        max-width: 85%;
+        margin: 0 auto;
+    }
+
+    .footer-schedules-h1 {
+        font-size: 1.8rem;
+    }
+
+    .footer-schedules-h2 {
+        font-size: 1.2rem;
+    }
+
+    .footer-schedules-h3 {
+        font-size: 1rem;
+    }
+
+    .footer-reviews-button {
+        width: 50%;
+        max-width: 230px;
+    }
+    
+
+    .footer-informations {
+        gap: 10px;
+    }
+
+    .footer-facebook-button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        padding: 15px 5px;
+    }
 }
