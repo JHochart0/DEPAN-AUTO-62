@@ -39,7 +39,7 @@
 ****** Responsive Rules *********
 ********************************/
 /* Mobiles (no tablets) */
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     .scroll-to-top-btn {
         bottom: 15px;
         right: 15px;

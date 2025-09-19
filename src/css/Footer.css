@@ -202,7 +202,7 @@
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 599px) {
     .footer-container {
         padding: 20px 0px;
     }

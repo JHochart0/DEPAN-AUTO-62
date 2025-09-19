@@ -71,7 +71,7 @@
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 599px) {
     .emailConfirmation-container {
         width: 90vw;
         padding-top: 5vh;
