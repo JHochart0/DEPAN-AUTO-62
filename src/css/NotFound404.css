@@ -48,3 +48,52 @@
     text-align:center;
     margin-right:5px;
 }
+
+/********************************
+****** Responsive Rules *******
+********************************/
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .notFound404-container {
+        width: 70vw;
+        padding-top: 8vh;
+    }
+
+    .notFound404-h1 {
+        font-size: 2rem;
+    }
+
+    .notFound404-h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    .notFound404-container {
+        width: 90vw;
+        padding-top: 5vh;
+    }
+
+    .notFound404-h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .notFound404-h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #notFound404-btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .notFound404-btn-icon {
+        margin-right: 8px;
+    }
+}

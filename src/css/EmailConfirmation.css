@@ -10,6 +10,7 @@
     padding-top:10vh;
     justify-content:center;
     align-items:center;
+    text-align:center;
 }
 
 .emailConfirmation-h1{
@@ -47,4 +48,52 @@
     color:black;
     text-align:center;
     margin-right:5px;
+}
+
+/**************************************
+****** Responsive Rules **********
+**************************************/
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .emailConfirmation-container {
+        width: 70vw;
+        padding-top: 8vh;
+    }
+
+    .emailConfirmation-h1 {
+        font-size: 2rem;
+    }
+
+    .emailConfirmation-h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .emailConfirmation-container {
+        width: 90vw;
+        padding-top: 5vh;
+    }
+
+    .emailConfirmation-h1 {
+        font-size: 1.7rem;
+    }
+
+    .emailConfirmation-h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #emailConfirmation-btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .emailConfirmation-btn-icon {
+        margin-right: 8px;
+    }
 }

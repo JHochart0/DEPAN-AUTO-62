@@ -180,7 +180,7 @@
     right: 0;
 }
 
-
+/* close the menu button */
 .close-btn {
     background: none;
     border: none;
@@ -209,7 +209,7 @@
     pointer-events: auto;
 }
 
-/*Navbar links inside mobile menu */
+/*Navbar links inside the mobile menu */
 .mobile-menu .navLink {
     background-color: #eeede9;
     display: block;

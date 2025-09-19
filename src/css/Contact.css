@@ -322,3 +322,96 @@
     margin-bottom: 10px;
 }
 
+/**************************************
+********* Responsive Rules *************
+**************************************/
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    .contact-banner {
+        height: 45vh;
+    }
+
+    .contact-banner-img {
+        width: 100%;
+        object-position: center;
+    }
+
+    .contact-banner-title {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    .contact-first-part {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+        justify-content: center;
+        width: 100%;
+        max-width: 1100px;
+    
+    }
+
+    .contact-informations-container,
+    .contact-form-container{
+        margin:auto;
+    }
+
+    .contact-informations-container,
+    .contact-form-container,
+    .contact-second-part {
+        padding: 20px;
+        width: 80%;
+    }
+    
+    iframe{
+        width:95% !important;
+    }
+
+}
+
+/*  Mobiles */
+@media (max-width: 599px) {
+
+    .contact-banner {
+        height: 40vh;
+    }
+
+    .contact-banner-img {
+        width: 100%;
+        object-position: center;
+    }
+
+    .contact-banner-title {
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+
+    .contact-first-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .contact-informations-container,
+    .contact-form-container{
+        margin:auto;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-submit {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-second-part{
+        width:80%;
+    }
+
+    iframe{
+        width:65% !important;
+    }
+}
