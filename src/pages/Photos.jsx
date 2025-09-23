@@ -33,7 +33,7 @@ function Photos() {
         <div className="photos-container">
             {/* Banner */}
             <div className="photos-banner">
-                <img src="/photos_depan_auto_62/depan_auto_62_galerie_photos.jpg" alt="Prestations DEPAN AUTO 62" className="photos-banner-img"/>
+                <img src={`${import.meta.env.BASE_URL}photos_depan_auto_62/depan_auto_62_galerie_photos.jpg`} alt="Prestations DEPAN AUTO 62" className="photos-banner-img"/>
                 <div className="photos-banner-title fade-in-up">
                     <h1>Découvrez votre dépanneur en images !</h1>
                 </div>
