@@ -365,9 +365,6 @@
         width: 80%;
     }
     
-    iframe{
-        width:95% !important;
-    }
 
 }
 
@@ -411,7 +408,4 @@
         width:80%;
     }
 
-    iframe{
-        width:65% !important;
-    }
 }
