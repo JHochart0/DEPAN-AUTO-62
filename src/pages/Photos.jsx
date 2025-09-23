@@ -14,17 +14,13 @@ function Photos() {
         document.title = "DEPAN AUTO 62 - Galerie photos";
 
         // A CHANGER LORS DE LA CREATION DU GOOGLE DRIVE
-        const url = `https://script.google.com/macros/s/AKfycbxrEaPYjBiGzZnAMlhTbCvjPBwUq3z777fZjr0JskCBVg8TwUoPihRm9hYC8KI-ZvTxlw/exec`;
+        const url = `https://script.google.com/macros/s/AKfycbwiUrpsCD1_o6CkIfEc3JArZma4QnOj9NEbAKN1wA9spPk3bBbochng-euaOPVVBR_7Vw/exec`;
 
         fetch(url)
             .then((res) => res.json())
             .then((data) => {
-                if (data.files) {
-                    const imageFiles = data.files.filter((file) =>
-                        file.mimeType.startsWith("image/")
-                    );
-                    setImages(imageFiles);
-                }
+
+                setImages(data);
                 setLoading(false);
             })
             .catch((err) => {

@@ -3,12 +3,10 @@ import React, { useState, useEffect } from "react";
 function PhotoItem({ file }) {
     const [isOpen, setIsOpen] = useState(false);
     const [isLoaded, setIsLoaded] = useState(false);
-    const [imageUrl, setImageUrl] = useState("");
 
     useEffect(() => {
         // build the url of the HD version
-        const url = `https://lh3.googleusercontent.com/d/${file.id}=w2000`;
-        setImageUrl(url);
+        const url = `https://lh3.googleusercontent.com/d/${file.id}=w800`;
 
         // Preload the HD image
         const img = new Image();
@@ -20,11 +18,11 @@ function PhotoItem({ file }) {
         <>
             {/* Thumbnail image */}
             <img
-                src={imageUrl}
+                src={file.thumbnailLink}
                 alt={`DEPAN_AUTO_62_${file.name}`}
                 className="photos-gallery-image"
                 onError={(e) => {
-                    e.target.src = imageUrl;
+                    e.target.src = file.thumbnailLink;
                 }}
                 onClick={() => setIsOpen(true)}
             />
@@ -37,9 +35,13 @@ function PhotoItem({ file }) {
 
                     {isLoaded && (
                         <img
-                            src={imageUrl}
+                            src={file.webContentLink}
                             alt={`DEPAN_AUTO_62_${file.name}`}
                             className="lightbox-image"
+                            onError={(e) => {
+                                e.target.src = file.webContentLink;
+                            }}
+                            
                         />
                     )}
                 </div>
