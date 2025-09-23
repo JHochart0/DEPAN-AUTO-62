@@ -19,7 +19,7 @@ function Services() {
         <div className="services-container">
             {/* Banner */}
             <div className="services-banner">
-                <img src="/photos_depan_auto_62/depan_auto_62_prestations.jpg" alt="Prestations DEPAN AUTO 62" className="services-banner-img"/>
+                <img src={`${import.meta.env.BASE_URL}/photos_depan_auto_62/depan_auto_62_prestations.jpg`} alt="Prestations DEPAN AUTO 62" className="services-banner-img"/>
                 <div className="services-banner-title fade-in-up">
                     <h1>Découvrez nos prestations proposées !</h1>
                 </div>

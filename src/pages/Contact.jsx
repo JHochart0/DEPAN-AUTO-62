@@ -41,7 +41,7 @@ function Contact() {
         <div className="contact-container">
             {/* Banner */}
             <div className="contact-banner">
-                <img src="/photos_depan_auto_62/depan_auto_62_voiture_floquee.jpg" alt="Voiture DEPAN AUTO 62" className="contact-banner-img"/>
+                <img src={`${import.meta.env.BASE_URL}/photos_depan_auto_62/depan_auto_62_voiture_floquee.jpg`} alt="Voiture DEPAN AUTO 62" className="contact-banner-img"/>
                 <div className="contact-banner-title fade-in-up">
                     <h1>Besoin d'un dépannage ou d'un renseignement ?</h1>
                     <h1>Contactez-nous dès maintenant !</h1>
