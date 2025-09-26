@@ -12,22 +12,25 @@ function Legal() {
 
     return (
         <div className="legal-container">
-            <h1>Mentions légales et politiques de confidentialité</h1>
+            <h1>Mentions légales et politique de confidentialité</h1>
             <div className="legal-section">
                 <h2>Mentions légales</h2>
                 <div className="legal-section-text">
-                    <p><strong>Nom commercial :</strong> DEPAN AUTO 62</p>
-                    <p><strong>Nature de l'entreprise :</strong> Artisanale règlementée</p>
-                    <p><strong>SIREN (siège) :</strong> 944 930 627</p>
-                    <p><strong>SIRET :</strong> 94493062700012</p>
-                    <p><strong>Date d'immatriculation au RNE :</strong> 17/06/2025</p>
-                    <p><strong>Date de début d'activité :</strong> 27/05/2025</p>
-                    <p><strong>Activité principale :</strong> Entretien et réparation de véhicules automobiles légers au domicile des particuliers</p>
-                    <p><strong>Code APE :</strong> 4520A - Entretien et réparation de véhicules automobiles légers</p>
-                    <p><strong>Code APRM :</strong> 45.20A-A - Réparation automobile de véhicules automobiles légers : entretien courant</p>
-                    <p><strong>Adresse :</strong> 201 rue Garibaldi, 62100 Calais, FRANCE</p>
-                    <p><strong>Adresse électronique :</strong> depan-auto-62@outlook.fr</p>
-                    <p><strong>Numéro de téléphone :</strong> 07 49 70 57 35</p> 
+                    <p><strong>Nom commercial : </strong>DEPAN AUTO 62</p>
+                    <p><strong>Forme Juridique : </strong>Entrepreneur individuel</p>
+                    <p><strong>Micro-entreprise : </strong>Oui</p>
+                    <p><strong>Forme d'exercice : </strong>Artisanale réglementée</p>
+                    <p><strong>Dirigeant : </strong>Verstraet ALEXIS</p>
+                    <p><strong>SIREN : </strong>944 930 627</p>
+                    <p><strong>SIRET (siège) : </strong>944 930 627 00012</p>
+                    <p><strong>Date d'immatriculation au RNE : </strong>17/06/2025</p>
+                    <p><strong>Date de début d'activité : </strong>27/05/2025</p>
+                    <p><strong>Activité principale : </strong>Entretien et réparation de véhicules automobiles légers au domicile des particuliers</p>
+                    <p><strong>Code APE : </strong>4520A - Entretien et réparation de véhicules automobiles légers</p>
+                    <p><strong>Code APRM : </strong>45.20A-A - Réparation automobile de véhicules automobiles légers : entretien courant</p>
+                    <p><strong>Adresse : </strong>201 rue Garibaldi, 62100 Calais, FRANCE</p>
+                    <p><strong>Adresse électronique : </strong>depan-auto-62@outlook.fr</p>
+                    <p><strong>Numéro de téléphone : </strong>07 49 70 57 35</p> 
                 </div>
             </div>
 

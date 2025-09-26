@@ -18,6 +18,7 @@
 /* first part of the header*/
 .footer-top {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -27,12 +28,13 @@
 /********************************
 *********Reviews Section*********
 ********************************/
+
 /*left side of the header (reviews)*/
 .footer-reviews{
     background-color: #eeede9;
     flex: 1;
-    min-width: 400px;
-    max-width: 400px;
+    min-width: 20vw;
+    max-width: 20vw;
     min-height:140px;
     border-radius:50%;
     padding: 20px;
@@ -124,15 +126,15 @@
 /*right side of the header (schedules)*/
 .footer-schedules{
     background-color: #eeede9;
-    min-width: 400px;
-    max-width: 500px;
-    min-height:140px;
+    min-width: 20vw;
+    max-width: 26vw;
+    min-height:14vh;
     border-radius:50%;
     padding: 20px;
-    display: flex;               /* active Flexbox */
-    flex-direction: column;      /* empile verticalement h1 + heures */
-    justify-content: center;     /* centre verticalement */
-    align-items: center;         /* centre horizontalement */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-shadow: 
         inset 0px 2px 5px rgba(0, 0, 0, 0.445), 
         inset 0px -2px 5px rgba(0, 0, 0, 0.445);
@@ -199,6 +201,13 @@
         order: -1;
     }
 
+    .footer-reviews,
+    .footer-schedules {
+        min-width: 55%;
+        max-width: 55%;
+        margin: 0 auto;
+    }
+
 }
 
 /* Mobile */
@@ -219,23 +228,27 @@
         margin: 0 auto;
     }
 
+    .footer-reviews-h2 {
+        font-size: 1.2rem;
+    }
+    
+    .footer-reviews-button {
+        width: 50%;
+        max-width: 230px;
+    }
+
     .footer-schedules-h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .footer-schedules-h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .footer-schedules-h3 {
         font-size: 1rem;
     }
 
-    .footer-reviews-button {
-        width: 50%;
-        max-width: 230px;
-    }
-    
 
     .footer-informations {
         gap: 10px;
