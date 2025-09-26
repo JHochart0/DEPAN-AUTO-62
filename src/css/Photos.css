@@ -200,6 +200,10 @@
         max-width: 90%;
         max-height: 85%;
     }
+
+    .lightbox{
+        padding:0;
+    }
 }
 
 /*  Mobiles */
@@ -231,5 +235,9 @@
     .lightbox-image {
         max-width: 85%;
         max-height: 80%;
+    }
+
+    .lightbox{
+        padding:0;
     }
 }
