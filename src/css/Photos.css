@@ -195,6 +195,11 @@
     .photos-gallery-image {
         height: 300px;
     }
+
+    .lightbox-image {
+        max-width: 90%;
+        max-height: 85%;
+    }
 }
 
 /*  Mobiles */
@@ -221,5 +226,10 @@
 
     .photos-gallery-image {
         height: 220px;
+    }
+
+    .lightbox-image {
+        max-width: 85%;
+        max-height: 80%;
     }
 }
