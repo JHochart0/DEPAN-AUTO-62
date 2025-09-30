@@ -282,3 +282,26 @@
         font-size: 0.8rem;
     }
 }
+
+/* Tablets (landscape)*/
+@media (max-width: 1500px) and (orientation: landscape){
+    .desktop-only {
+        display: none;
+    }
+    .mobile-tablet-only {
+        display: block;
+    }
+}
+
+
+/* Mobile landscape */
+@media (max-width: 899px) and (orientation: landscape) {
+    .mobile-menu {
+        height:100%;
+    }
+    
+
+    .close-btn {
+        font-size: 1.5rem;
+    }
+}

@@ -105,6 +105,36 @@
     }
 }
 
+/* Tablet Landscape */
+@media (max-width: 1500px) and (orientation: landscape) {
+    .service-card {
+        padding: 18px;
+        margin: 18px 0;
+        min-width: 22vw;
+    }
+
+    .service-card-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .service-card-icon {
+        font-size: 1.3rem;
+    }
+
+    .service-card-description {
+        font-size: 0.9rem !important;
+    }
+
+    .service-card-details ul {
+        padding-left: 18px;
+        font-size: 0.9rem;
+    }
+
+    .service-card-details li {
+        margin: 9px 0;
+    }
+}
+
 /*  Mobiles */
 @media (max-width: 599px) {
     .service-card {
@@ -122,6 +152,36 @@
 
     .service-card-description {
         font-size: 0.8rem !important;
+    }
+
+    .service-card-details ul {
+        padding-left: 15px;
+        font-size: 0.85rem;
+    }
+
+    .service-card-details li {
+        margin: 8px 0;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 899px) and (orientation: landscape) {
+    .service-card {
+        padding: 15px;
+        margin: 12px 0;
+        min-width: 45%;
+    }
+
+    .service-card-header h2 {
+        font-size: 1.05rem;
+    }
+
+    .service-card-icon {
+        font-size: 1.1rem;
+    }
+
+    .service-card-description {
+        font-size: 0.85rem !important;
     }
 
     .service-card-details ul {

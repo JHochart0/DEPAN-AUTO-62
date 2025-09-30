@@ -70,6 +70,28 @@
     }
 }
 
+/* Tablets Landscape */
+@media (max-width: 1500px) and (orientation: landscape) {
+    .emailConfirmation-container {
+        width: 50vw;
+        padding-top: 6vh;
+    }
+
+    .emailConfirmation-h1 {
+        font-size: 2rem;
+    }
+
+    .emailConfirmation-h2 {
+        font-size: 1.2rem;
+    }
+
+    #emailConfirmation-btn {
+        font-size: 1.2rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
+
 /* Mobile */
 @media (max-width: 599px) {
     .emailConfirmation-container {
@@ -95,5 +117,28 @@
 
     .emailConfirmation-btn-icon {
         margin-right: 8px;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 899px) and (orientation: landscape) {
+    .emailConfirmation-container {
+        width: 80vw;
+        padding-top: 4vh;
+    }
+
+    .emailConfirmation-h1 {
+        font-size: 1.9rem;
+    }
+
+    .emailConfirmation-h2 {
+        font-size: 1.1rem;
+    }
+
+    #emailConfirmation-btn {
+        width: 90%;
+        max-width: 300px;
+        font-size: 1.1rem;
+        padding: 0.8rem 1.2rem;
     }
 }
