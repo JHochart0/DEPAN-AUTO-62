@@ -139,7 +139,7 @@
 /*  Mobiles */
 @media (max-width: 599px) {
     .services-banner {
-        height: 25vh;
+        height: 30vh;
     }
 
     .services-banner-img {
