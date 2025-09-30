@@ -308,6 +308,18 @@
         gap: 15px;
     }
 
+    .footer-schedules-h1 {
+        font-size: 1.5rem;
+    }
+
+    .footer-schedules-h2 {
+        font-size: 1rem;
+    }
+
+    .footer-schedules-h3 {
+        font-size: 0.9rem;
+    }
+
     .footer-container {
         padding: 25px 10px;
     }
