@@ -14,7 +14,7 @@ function Photos() {
         document.title = "DEPAN AUTO 62 - Galerie photos";
 
         // A CHANGER LORS DE LA CREATION DU GOOGLE DRIVE
-        const url = `https://script.google.com/macros/s/AKfycbwiUrpsCD1_o6CkIfEc3JArZma4QnOj9NEbAKN1wA9spPk3bBbochng-euaOPVVBR_7Vw/exec`;
+        const url = `https://script.google.com/macros/s/AKfycbygdAIaZFMJCP4cioDo2sZJCFXjF9Xs71QPexR85JdKgWFfmnU_gBndZPdqRS36W841nA/exec`;
 
         fetch(url)
             .then((res) => res.json())
