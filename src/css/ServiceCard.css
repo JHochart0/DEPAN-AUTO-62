@@ -83,3 +83,53 @@
     color: #fd7d13;
     font-weight: bold;
 }
+
+
+/********************************
+****** Responsive Rules ********
+********************************/
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .service-card {
+        padding: 15px;
+        min-width: auto;
+    }
+
+    .service-card-header h2 {
+        font-size: 1.1rem;
+    }
+
+    .service-card-description {
+        font-size: 0.85rem !important;
+    }
+}
+
+/*  Mobiles */
+@media (max-width: 599px) {
+    .service-card {
+        padding: 12px;
+        margin: 10px 0;
+    }
+
+    .service-card-header h2 {
+        font-size: 1rem;
+    }
+
+    .service-card-icon {
+        font-size: 1rem;
+    }
+
+    .service-card-description {
+        font-size: 0.8rem !important;
+    }
+
+    .service-card-details ul {
+        padding-left: 15px;
+        font-size: 0.85rem;
+    }
+
+    .service-card-details li {
+        margin: 8px 0;
+    }
+}

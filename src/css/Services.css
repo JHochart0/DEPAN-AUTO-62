@@ -104,3 +104,75 @@
 }
 
 
+/********************************
+****** Responsive Rules ********
+********************************/
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .services-banner {
+        height: 40vh;
+    }
+
+    .services-banner-img {
+        width: 100%;
+        object-position: center;
+    }
+
+    .services-banner-title {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .services-main-content {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+
+    .services-cards-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+
+/*  Mobiles */
+@media (max-width: 599px) {
+    .services-banner {
+        height: 25vh;
+    }
+
+    .services-banner-img {
+        width: 100%;
+        object-position: center;
+    }
+
+    .services-banner-title {
+        font-size: 0.7rem;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .services-main-content {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .services-title {
+        font-size: 1.4rem;
+    }
+
+    .services-note {
+        font-size: 0.8rem;
+    }
+
+    .services-cards-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* centre horizontalement */
+        gap: 15px;
+        margin: 20px auto;
+        padding: 0;
+    }
+}
+
