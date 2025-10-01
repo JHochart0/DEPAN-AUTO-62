@@ -17,7 +17,6 @@ import EmailConfirmation from "./pages/EmailConfirmation.jsx";
 import Legal from "./pages/Legal.jsx";
 import NotFound404 from "./pages/NotFound404.jsx";
 
-
 function App() {
     return (
         <Router>

@@ -9,6 +9,7 @@ import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faFileInvoice, faTools, faMapMarkerAlt, faBolt, faCar } from '@fortawesome/free-solid-svg-icons';
 
+// home page
 function Home() {
     useRevealOnScroll(".fade-in-up, .fade-in-side-left, .fade-in-side-right");
 
@@ -32,7 +33,7 @@ function Home() {
                     <NavLink to="/contact" content="Contactez-nous !" id="home-contact-section-btn"></NavLink>
             </div>
 
-            {/* Introduction */}
+            {/* Introduction part */}
             <div className="home-intro">
                 <div className="home-intro-left-side fade-in-side-left">
                     <img src={`${import.meta.env.BASE_URL}/photos_depan_auto_62/depan_auto_62_accueil1.jpg`} alt="accueil vitrine" />
@@ -50,7 +51,7 @@ function Home() {
                     </p>
                 </div>
             </div>
-            {/* Geographic zone */}
+            {/* Geographic zone part */}
             <div className="home-zone">
                 <div className="home-zone-left fade-in-side-left">
                     <h2 className="home-zone-h2">Notre zone d’intervention</h2>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+// this component is used to show one photo in the gallery and show a lightbox with the real size of the image when clicked on
 function PhotoItem({ file }) {
     const [isOpen, setIsOpen] = useState(false);
     const [isLoaded, setIsLoaded] = useState(false);

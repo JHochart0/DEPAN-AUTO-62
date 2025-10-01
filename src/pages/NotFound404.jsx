@@ -7,6 +7,7 @@ import '../css/NotFound404.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
+// Error 404 page
 function NotFound404() {
     
     // change the title of the page

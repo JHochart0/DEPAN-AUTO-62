@@ -6,6 +6,7 @@ import useRevealOnScroll from "../hooks/useRevealOnScroll";
 
 import ServiceCard from "../components/ServiceCard.jsx";
 
+// Services page
 function Services() {
 
     useRevealOnScroll(".fade-in-up, .fade-in-side-left, .fade-in-side-right");
@@ -17,14 +18,14 @@ function Services() {
 
     return (
         <div className="services-container">
-            {/* Banner */}
+            {/* Services Banner */}
             <div className="services-banner">
                 <img src={`${import.meta.env.BASE_URL}/photos_depan_auto_62/depan_auto_62_prestations.jpg`} alt="Prestations DEPAN AUTO 62" className="services-banner-img"/>
                 <div className="services-banner-title fade-in-up">
                     <h1>Découvrez nos prestations proposées !</h1>
                 </div>
             </div>
-            {/* Main content */}
+            {/* Services part */}
             <div className="services-main-content fade-in-side-left">
                 <h1 className="services-title">Nos prestations :</h1>
                 <p className="services-note">

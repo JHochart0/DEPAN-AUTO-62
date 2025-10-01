@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 import logo from '../assets/img/DEPANAUTO62_Logo.jpg';
 
-//this component is the logo of the website that brings to the homepage
+//this component is the logo of the website that brings to the homepage when clicked on
 function Logo() {
     return (
         <NavLink to="/" content="" className="logo">

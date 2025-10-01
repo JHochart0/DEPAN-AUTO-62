@@ -9,8 +9,7 @@ import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import Schedules from '../components/Schedules';
 import NavLink from "../components/NavLink.jsx";
 
-
-
+// contact page
 function Contact() {
     const [isFbLoaded, setIsFbLoaded] = useState(false);
     const [rdvPlace, setRdvPlace] = useState("");
@@ -66,7 +65,7 @@ function Contact() {
                     </p>
                     <NavLink to="/legal" content="En savoir plus sur la politique de confidentialité" id="contact-informations-legal-link"/>
                 </div> 
-                {/* Form */}
+                {/* Contact Form */}
                 <div className="contact-form-container fade-in-side-right">
                     <h1 className="contact-form-title">Prendre rendez-vous</h1>
                     <form

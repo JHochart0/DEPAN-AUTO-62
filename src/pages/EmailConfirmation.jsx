@@ -7,7 +7,7 @@ import '../css/EmailConfirmation.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-
+// email confirmation page
 function EmailConfirmation() {
     
     // change the title of the page

@@ -26,9 +26,6 @@ function Header() {
             {/* Desktop navbar */}
             <Navbar className="header-navbar desktop-only"/>
 
-
-            
-
             {/* Desktop PhoneButton */}
             <PhoneButton className="phone-btn desktop-only" />
 

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-// this hook is used to detect when to trigger the css animation on scroll
+// this hook is used to trigger the css animation when the element is shown after scrollin
 function useRevealOnScroll(selector) {
     useEffect(() => {
         const elements = document.querySelectorAll(selector);

@@ -5,7 +5,7 @@ import { faCircleChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 import '../css/ScrollToTopButton.css';
 
-// this component is a simple button used to go back to the top of the page
+// this component is a simple button used to go back to the top of the page when clicked on
 function ScrollToTopButton() {
 
     //variable to check when the button must be visible or not

@@ -5,6 +5,7 @@ import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 import "../css/ServiceCard.css";
 
+// this component is used to show one service card with its details
 function ServiceCard({ title, description, details }) {
     const [isOpen, setIsOpen] = useState(false);
 

@@ -15,7 +15,7 @@
     margin-top:100px;
 }
 
-/* first part of the header*/
+/* first part of the footer*/
 .footer-top {
     display: flex;
     flex-direction: row;
@@ -29,7 +29,7 @@
 *********Reviews Section*********
 ********************************/
 
-/*left side of the header (reviews)*/
+/*left side of the footer (reviews)*/
 .footer-reviews{
     background-color: #eeede9;
     flex: 1;
@@ -88,7 +88,7 @@
 /********************************
 ******Informations Section*******
 ********************************/
-/*center of the header (informations)*/
+/*center of the footer (informations)*/
 .footer-informations {
     display: flex;
     flex-direction: column;
@@ -123,7 +123,7 @@
 *******Schedules Section*********
 ********************************/
 
-/*right side of the header (schedules)*/
+/*right side of the footer (schedules)*/
 .footer-schedules{
     background-color: #eeede9;
     min-width: 20vw;
@@ -161,7 +161,7 @@
 /********************************
 *********Legals Section**********
 ********************************/
-/*Second part of the header (for legals part)*/
+/*Second part of the footer (for legals part)*/
 .footer-bottom {
     margin-top: 20px;
     border-top: 1px solid #303030;

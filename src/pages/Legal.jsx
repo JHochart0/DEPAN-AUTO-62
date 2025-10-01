@@ -4,6 +4,7 @@ import '../css/Legal.css'
 
 import NavLink from "../components/NavLink.jsx";
 
+// legal and privacy politics page
 function Legal() {
     // change the title of the page
     useEffect(() => {
@@ -11,8 +12,11 @@ function Legal() {
     }, []);
 
     return (
+        
         <div className="legal-container">
             <h1>Mentions légales et politique de confidentialité</h1>
+
+            {/* Legals part */}
             <div className="legal-section">
                 <h2>Mentions légales</h2>
                 <div className="legal-section-text">
@@ -34,6 +38,7 @@ function Legal() {
                 </div>
             </div>
 
+            {/* Privacy politics part */}
             <div className="privacy-section">
                 <h2>Politique de confidentialité</h2>
                 <div className="privacy-section-text">
