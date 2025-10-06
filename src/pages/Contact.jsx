@@ -90,17 +90,17 @@ function Contact() {
                         <input type="text" name="Plaque d'immatriculation" placeholder="Plaque d'immatriculation*" required></input>
                         <select name="Prestation souhaitée" required>
                             <option value="" disabled selected hidden>Prestation souhaitée*</option>
-                            <option value="prestation1">Système de freinage</option>
-                            <option value="prestation2">Système de direction</option>
-                            <option value="prestation3">Système échappement</option>
-                            <option value="prestation4">Système moteur</option>
-                            <option value="prestation5">Système électronique</option>
+                            <option value="Système de freinage">Système de freinage</option>
+                            <option value="Système de direction">Système de direction</option>
+                            <option value="Système échappement">Système échappement</option>
+                            <option value="Système moteur">Système moteur</option>
+                            <option value="Système électronique">Système électronique</option>
                         </select>
                         <button type="submit" className="contact-submit">Envoyer</button>
 
                         <input type="hidden" name="_template" value="table" />
                         <input type="hidden" name="_subject" value="Prise de rendez-vous depuis le site DEPAN AUTO 62"></input>
-                        <input type="hidden" name="_next" value="http://localhost:5173/#/email-sent" />
+                        <input type="hidden" name="_next" value={`${window.location.origin}/#/email-sent`} />
                     </form>
                 </div>
             </div>
