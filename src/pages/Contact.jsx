@@ -100,7 +100,7 @@ function Contact() {
 
                         <input type="hidden" name="_template" value="table" />
                         <input type="hidden" name="_subject" value="Prise de rendez-vous depuis le site DEPAN AUTO 62"></input>
-                        <input type="hidden" name="_next" value={`${window.location.origin}/#/email-sent`} />
+                        <input type="hidden" name="_next" value={`${window.location.origin}/DEPANAUTO62/#/email-sent`} />
                     </form>
                 </div>
             </div>
