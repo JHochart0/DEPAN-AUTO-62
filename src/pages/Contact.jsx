@@ -12,7 +12,10 @@ import NavLink from "../components/NavLink.jsx";
 // contact page
 function Contact() {
     const [isFbLoaded, setIsFbLoaded] = useState(false);
+
     const [rdvPlace, setRdvPlace] = useState("");
+    const [phone, setPhone] = useState("");
+    const [error, setError] = useState("");
 
     useRevealOnScroll(".fade-in-up, .fade-in-side-left, .fade-in-side-right");
 
@@ -29,10 +32,22 @@ function Contact() {
         }, 300);
     }, []);
 
-    // function to submit the form when the user click on the form button
+    // function to check the format of the phone number in the form and handle the submit button.
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        // checking the format of the phone number
+        const phoneRegex = /^[+]?[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/;
+        const digitsCount = phone.replace(/\D/g, "").length;
+
+        if (!phoneRegex.test(phone) || digitsCount < 6 || digitsCount > 15) {
+            setError(
+                "Veuillez saisir un numéro de téléphone valide.\n(Exemple : +33 6 12 34 56 78 ou 0612345678)"
+            );
+            return;
+        }
         // if ok, we submit the form
+        setError(""); // no error
         e.target.submit();
     };
 
@@ -86,7 +101,16 @@ function Contact() {
                             <input type="text" name="Adresse d'intervention" placeholder="Adresse d'intervention*" required />
                         )}
                         
-                        <input type="tel" name="Numéro de téléphone" placeholder="Numéro de téléphone*" required />
+                        <input
+                            type="tel"
+                            name="Numéro de téléphone" 
+                            placeholder="Numéro de téléphone*" 
+                            value={phone}
+                            onChange={(e)=>setPhone(e.target.value)}
+                            required 
+                        />
+                        
+
                         <input type="text" name="Plaque d'immatriculation" placeholder="Plaque d'immatriculation*" required></input>
                         <select name="Prestation souhaitée" required>
                             <option value="" disabled selected hidden>Prestation souhaitée*</option>
@@ -96,6 +120,7 @@ function Contact() {
                             <option value="Système moteur">Système moteur</option>
                             <option value="Système électronique">Système électronique</option>
                         </select>
+                        {error && <p className="contact-form-error-message">{error}</p>}
                         <button type="submit" className="contact-submit">Envoyer</button>
 
                         <input type="hidden" name="_template" value="table" />
