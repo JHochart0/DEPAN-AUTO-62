@@ -29,7 +29,7 @@ function Contact() {
         }, 300);
     }, []);
 
-    // function to check if the email typed in the form is corresponding to the good format
+    // function to submit the form when the user click on the form button
     const handleSubmit = (e) => {
         e.preventDefault();
         // if ok, we submit the form
