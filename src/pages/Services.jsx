@@ -46,12 +46,13 @@ function Services() {
                             { name: "Remplacement vanne EGR", price: "30€ (1h00)" },
                             { name: "Remplacement démarreur", price: "30€ (1h00)" },
                             { name: "Remplacement alternateur", price: "30€ (1h00)" },
-                            { name: "Remplacement courroie d'accessoire", price: "30€ (1h00)" },
                             { name: "Remplacement galet tendeur courroie d'accessoire", price: "30€ (1h00)" },
                             { name: "Remplacement bougie d'allumage", price: "30€ (1h00)" },
                             { name: "Remplacement bobine d'allumage", price: "30€ (1h00)" },
                             { name: "Remplacement faisceaux d'allumage", price: "30€ (1h00)" },
-                            { name: "Remplacement huile boîte de vitesses", price: "30€ (1h00)" }
+                            { name: "Remplacement huile boîte de vitesses", price: "30€ (1h00)" },
+                            { name: "Remplacement kit de distribution", price: "160€ (4h00)" }
+
                         ]}
                     />
                     
@@ -75,9 +76,11 @@ function Services() {
                             { name: "Remplacement rotule axiale + soufflet", price: "30€ (1h00, 1 côté)" },
                             { name: "Remplacement biellette de barre stab", price: "30€ (1h00, les 2 côtés)" },
                             { name: "Remplacement amortisseurs avec coupelles", price: "90 à 120€ (3h00 à 4h00)" },
-                            { name: "Remplacement triangles", price: "30 à 60€ (1h00 à 2h00)" },
                             { name: "Remplacement amortisseurs arrière", price: "30 à 60€ (1h00 à 2h00)" },
-                            { name: "Remplacement cardan complet", price: "30 à 60€ (1h00 à 2h00)" }
+                            { name: "Remplacement triangles", price: "30 à 60€ (1h00 à 2h00)" },
+                            { name: "Remplacement cardan complet", price: "30 à 60€ (1h00 à 2h00)" },
+                            { name: "Remplacement ressort avant", price: "60€ (2h00)" },
+                            { name: "Remplacement ressort arrière", price: "60€ (2h00)" }
                         ]}
                     />
 
@@ -88,7 +91,7 @@ function Services() {
                             { name: "Remplacement silencieux", price: "30€ (1h00)" },
                             { name: "Remplacement intermédiaire", price: "30€ (1h00)" },
                             { name: "Remplacement silent bloc échappement", price: "30€ (1h00)" },
-                            { name: "Remplacement échappement complet", price: "30€ (1h00)" }
+                            { name: "Remplacement filtre à particule", price: "200€ (4h00)" }
                         ]}
                     />
 
@@ -98,8 +101,6 @@ function Services() {
                         details={[
                             { name: "Passage valise diagnostic", price: "30€ (1h00)" },
                             { name: "Recherche de panne", price: "30€ (1h00)" },
-                            { name: "Changement des bougies", price: "30€ (1h00)" },
-                            { name: "Remise à zéro compteur de vidange", price: "30€ (1h00)" },
                             { name: "Remplacement batterie", price: "15€ (30 min)" }
                         ]}
                     />
