@@ -84,8 +84,7 @@ function Contact() {
                     <h1 className="contact-form-title">Prendre rendez-vous</h1>
                     <form
                         onSubmit={handleSubmit}
-                        action="https://formsubmit.co/jovanyhochart@gmail.com"
-                        //action="https://formsubmit.co/ce5f3d1e4bc9a23382b07adf7b3b23ed"
+                        action="https://formsubmit.co/ce5f3d1e4bc9a23382b07adf7b3b23ed"
                         method="POST"
                         className="contact-form"
                     >
