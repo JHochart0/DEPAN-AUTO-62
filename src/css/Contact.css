@@ -239,6 +239,7 @@
 /* every buttons / inputs */
 .contact-form input,
 .contact-form select,
+.contact-form textarea,
 .contact-submit {
     width: 90%;
     padding: 12px 15px;
@@ -258,8 +259,17 @@
     background-color: #fff;
 }
 
+/* textarea input */
+.contact-form textarea {
+    resize: vertical;
+    max-height: 200px;
+    min-height: 100px;
+    font-family: inherit;
+}
+
 .contact-form input:focus,
-.contact-form select:focus {
+.contact-form select:focus,
+.contact-form textarea:focus {
     border-color: #fd7d13;
     box-shadow: 0 0 6px rgba(253,125,19,0.4);
     outline: none;

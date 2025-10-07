@@ -13,7 +13,6 @@ import NavLink from "../components/NavLink.jsx";
 function Contact() {
     const [isFbLoaded, setIsFbLoaded] = useState(false);
 
-    const [rdvPlace, setRdvPlace] = useState("");
     const [phone, setPhone] = useState("");
     const [error, setError] = useState("");
 
@@ -85,21 +84,14 @@ function Contact() {
                     <h1 className="contact-form-title">Prendre rendez-vous</h1>
                     <form
                         onSubmit={handleSubmit}
-                        action="https://formsubmit.co/ce5f3d1e4bc9a23382b07adf7b3b23ed" //<form action="https://formsubmit.co/your@email.com" method="POST">
+                        action="https://formsubmit.co/jovanyhochart@gmail.com"
+                        //action="https://formsubmit.co/ce5f3d1e4bc9a23382b07adf7b3b23ed"
                         method="POST"
                         className="contact-form"
                     >
                         <input type="text" name="Nom" placeholder="Nom*" required />
                         <input type="text" name="Prenom" placeholder="Prénom*" required />
-                        <select name="Lieu de rendez-vous" value={rdvPlace} onChange={(e) => setRdvPlace(e.target.value)} required >
-                            <option value="" disabled selected hidden>Lieu de rendez-vous*</option>
-                            <option value="À domicile">À domicile</option>
-                            <option value="À notre garage">À notre garage</option>
-                        </select>
-
-                        {rdvPlace === "À domicile" && (
-                            <input type="text" name="Adresse d'intervention" placeholder="Adresse d'intervention*" required />
-                        )}
+                        <input type="text" name="Adresse d'intervention" placeholder="Adresse d'intervention*" required />
                         
                         <input
                             type="tel"
@@ -112,6 +104,7 @@ function Contact() {
                         
 
                         <input type="text" name="Plaque d'immatriculation" placeholder="Plaque d'immatriculation*" required></input>
+                        
                         <select name="Prestation souhaitée" required>
                             <option value="" disabled selected hidden>Prestation souhaitée*</option>
                             <option value="Système de freinage">Système de freinage</option>
@@ -120,6 +113,9 @@ function Contact() {
                             <option value="Système moteur">Système moteur</option>
                             <option value="Système électronique">Système électronique</option>
                         </select>
+
+                        <textarea name="Details de la prestation" placeholder="Précisez les détails de la prestation souhaitée...*" rows="4" required></textarea>
+                        
                         {error && <p className="contact-form-error-message">{error}</p>}
                         <button type="submit" className="contact-submit">Envoyer</button>
 

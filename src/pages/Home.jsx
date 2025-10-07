@@ -59,7 +59,7 @@ function Home() {
                         DEPAN AUTO 62 intervient dans un rayon de <strong>40 km autour de Calais</strong>.
                     </p>
                     <p className="home-zone-p">
-                        Pour tout problème avec votre véhicule, nous assurons un dépannage rapide <strong>à votre domicile</strong> ou vous accueillons <strong>sur rendez-vous dans notre garage</strong>.
+                        Pour tout problème avec votre véhicule, nous assurons un dépannage rapide <strong>à votre domicile</strong> ou directement <strong>sur votre lieu de travail</strong>.
                     </p>
                 </div>
                 <div className="home-zone-right fade-in-side-right">

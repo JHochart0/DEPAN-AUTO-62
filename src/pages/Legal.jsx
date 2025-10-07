@@ -51,7 +51,7 @@ function Legal() {
                         <li>Nom et prénom</li>
                         <li>Numéro de téléphone</li>
                         <li>Adresse e-mail</li>
-                        <li>Adresse d’intervention (si nécessaire)</li>
+                        <li>Adresse d’intervention (domicile ou travail)</li>
                         <li>Informations sur le véhicule</li>
                     </ul>
 
