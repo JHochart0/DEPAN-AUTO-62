@@ -15,8 +15,8 @@ function Photos() {
     useEffect(() => {
         document.title = "DEPAN AUTO 62 - Galerie photos";
 
-        // A CHANGER LORS DE LA CREATION DU GOOGLE DRIVE
-        const url = `https://script.google.com/macros/s/AKfycbygdAIaZFMJCP4cioDo2sZJCFXjF9Xs71QPexR85JdKgWFfmnU_gBndZPdqRS36W841nA/exec`;
+        // Google script calling the google drive API, change the link of each new deployment
+        const url = `https://script.google.com/macros/s/AKfycbzRxI-JvXGxesCOuRZMHSl3OgpdmWa2mUPoLn0CoiRVyRglbrBPB_dgtkZlzvXd2ggrGQ/exec`;
 
         fetch(url)
             .then((res) => res.json())
