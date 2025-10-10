@@ -19,11 +19,11 @@ function PhotoItem({ file }) {
         <>
             {/* Thumbnail image */}
             <img
-                src={file.thumbnailLink}
+                src={file.webContentLink}
                 alt={`DEPAN_AUTO_62_${file.name}`}
                 className="photos-gallery-image"
                 onError={(e) => {
-                    e.target.src = file.thumbnailLink;
+                    e.target.src = file.webContentLink;
                 }}
                 onClick={() => setIsOpen(true)}
             />
