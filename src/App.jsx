@@ -19,7 +19,7 @@ import NotFound404 from "./pages/NotFound404.jsx";
 
 function App() {
     return (
-        <Router>
+        <Router basename="/">
             <ScrollToTop />
             <div className="App">
                 <Header />
